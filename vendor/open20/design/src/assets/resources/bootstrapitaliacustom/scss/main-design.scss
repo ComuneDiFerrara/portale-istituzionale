@@ -1,0 +1,60 @@
+//BRANDBOOK
+@import "brandbook";
+
+//VARIABILI
+@import "variables-design";
+
+/*BOOTSTRAP-ITALIA*/
+@import "bi-color-override";
+
+//ABSTRACT
+@import "mixin-design";
+
+/* STYLE CUSTOM */
+/* platform/common/web/scss */
+@import "style_platform"; 
+
+@import "../node_modules/bootstrap-italia/src/scss/bootstrap-italia";
+
+//COMMON
+
+@import "bi-avatar-override";
+@import "bi-alert-override";
+@import "bi-skiplinks-override";
+@import "typography-design";
+@import "header-design";
+@import "footer-design";
+@import "layout-content-design";
+@import "assistance-design";
+@import "divider-design";
+@import "heading-design";
+@import "table-design";
+@import "tooltip-design";
+@import "utility-design";
+
+
+@import "material-icons-design"; 
+
+//COMPONENTS
+
+@import "components/bi-steppers-wizard";
+@import "components/bi-checkbox-list-tags";
+@import "components/bi-owl-carousel";
+@import "components/bi-collapse";
+@import "components/bi-modal-override";
+@import "components/bi-form"; // DA CHIEDERE A MARCI NOME CORRETTO
+@import "components/bi-news";
+@import "components/bi-discussions";
+@import "components/bi-community";
+@import "components/bi-event";
+@import "components/bi-organizzazioni";
+@import "components/bi-document";
+@import "components/bi-context-menu-widget";
+@import "components/bi-user-list";
+
+
+
+//TRICKS AND TEMP
+@import 'bi-IECompatibility-design';
+
+

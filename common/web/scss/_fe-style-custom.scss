@@ -1,0 +1,78 @@
+/* PRIMARY-COLOR OVERRIDE*/
+$primary-h: 198;
+$primary-s: 100;
+$primary-b: 70;
+
+/* THEME COLOR */
+$primary: #007DB3;
+$secondary: #FFD400;
+$tertiary: #000;
+$dark-gray: #333333;
+$card-gray:#455B71;
+
+$fe-theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "dark-gray": $dark-gray,
+  "card-gray": $card-gray,
+);
+$theme-colors: map-merge($theme-colors, $fe-theme-colors);
+
+.btn {
+  text-transform: uppercase;
+}
+.container {
+  @media (max-width:991px) {
+    max-width: 100% !important;
+  }
+}
+
+.back-to-top{
+  bottom:70px !important;
+  
+}
+
+#dropdownMenuProfile{
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.menu-profile {
+  .dropdown-menu{
+    ul{
+      li:nth-child(1){
+        @extend .border-bottom;
+      }
+    }
+    .myprofile-menu, .privacy-menu, .cookie-menu, .divider{
+      @extend .d-none;
+     }
+  }
+  
+}
+
+.callout{
+  ul{
+    color:#5b6f82;
+  }
+}
+
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  main{
+    padding-bottom: 50px;
+  }
+}
+
+body{
+  -webkit-print-color-adjust: exact;
+}
+
+main::after{
+  height: 50px;
+  display: block;
+}

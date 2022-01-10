@@ -1,0 +1,32 @@
+.page-header{
+    font-size: 1rem;
+    border: none;
+
+  .cta-wrapper{
+      display: flex;
+      align-items: center;
+      @media (min-width: 768px) {
+        justify-content: flex-end;
+      }
+      a {
+          span + span {
+              margin-left: 5px;
+          }
+          
+      }
+      a:not(.btn){
+          text-decoration: none;
+              span{
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  
+              }
+      }
+
+  }
+  .manage-cta-container{
+      a:nth-child(1){
+          margin-right: 10px;
+      }
+  }
+}

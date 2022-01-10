@@ -1,0 +1,169 @@
+.view-plugin-title{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color:@brand-primary-color;
+    letter-spacing: normal;
+    .dash{
+        background:@brand-primary-color;
+        padding: 10px;
+        margin-right: 5px;
+        border-radius: 50%;
+        color: white;
+        &::before{
+            width: 15px;
+            display: flex;
+            justify-content: center;
+            height: 15px;
+            align-items: center;
+        }
+    }
+}
+
+.intro-section, .content-section {
+    font-size: 18px !important;
+    .small, small{
+        font-size: 16px !important;
+    }
+}
+
+.intro-section{
+    
+    hr{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+.uploadcrop {
+    .preview-container{
+        height: auto;
+        width: 100%;
+        padding-right: 15px;
+	img{
+		height: auto;
+		width: 100%;
+	}
+
+    }
+}
+
+
+
+.attachments-list{
+    .attachment-list-item{
+     
+        .attachment-list-item-name{
+            width: 85%;
+        }
+        .attachment-list-item-action{
+            width: 13%;
+            display: flex;
+            align-items: flex-start
+        }
+    }
+}
+
+.h5{
+    font-weight: bold !important;
+    a{
+        text-decoration: none;
+    }
+}
+
+//PARTE AMMINISTRAZIONE PRIVILEGI
+#AmosGridViewAccordion{
+    .card{       
+        .collapseLink {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: @brand-primary-color;
+            color: white;
+            h2{
+                margin-bottom: 0;
+                
+            }
+            .p-t-20{
+                padding-top: 0 !important;
+                margin-top: 10px;
+            }
+        }
+       
+    }
+    
+    
+}
+#redazione {
+    h2{
+        margin-top: 50px;
+        width: 100%;
+        border-bottom: 1px solid @brand-primary-color;
+        color: @brand-primary-color;
+        font-size: 2.666rem;
+        letter-spacing: -1.2px;
+        line-height: 1.25;
+        text-transform: uppercase;
+
+    }
+}
+
+
+.community-dashboard-container{
+    background-color: transparent;
+}
+
+
+.admin-card-container {
+    .icon-btn-action{
+        a.btn-connect-to-user{
+            background: transparent;
+           
+            &:hover{
+                background: transparent;
+                opacity: 0.8;
+                color: white;
+            }
+        }
+    }
+}
+
+.btn.btn-action-primary{
+    background-color:#ffff !important;
+    color: @brand-primary-color !important;
+    border-color: @brand-primary-color !important;
+    &:hover{
+        background-color:@brand-primary-color !important;
+        border-color: #ffff !important;
+        color: #ffff !important;
+    }
+}
+
+.btn.btn-action-primary + h2{
+    margin-top: 10px;
+}
+
+//BUG TABELLE TROPPO LARGHE, DA TOGLIERE POST REDESIGN
+.documents-index,
+.agid-person-index,
+.agid-organizational-unit-index,
+.agid-service-index,
+.agid-dataset-index,
+.news-index,
+.event-index{
+    .table-responsive{
+        .kv-grid-container{
+            overflow-x: scroll;
+        }
+    }
+}
+
+//RIMOZIONE RICHIESTA
+.btn-connect-to-user,
+.profile .info-view-header .btn[title="Collegati"]{
+    display: none !important;
+}
+

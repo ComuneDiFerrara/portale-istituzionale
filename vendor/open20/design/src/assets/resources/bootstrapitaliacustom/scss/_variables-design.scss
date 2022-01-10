@@ -1,0 +1,49 @@
+/* BACKGROUND PLATFORM */
+$background-image-default: unset;
+$background-color-default: #5c5c5c;
+
+/* UTILITY COLOR */
+$tooltip-bg: #5e7887;
+$card-preference-bg: lighten($brandbook-primary-color, 60);
+$tags-list-bg: lighten($brandbook-primary-color, 60);
+$folder: #FAD165; 
+
+$components-colors: (
+    "card-preference-bg": $card-preference-bg,
+    "tags-list-bg": $tags-list-bg,
+    "tooltip-bg": $tooltip-bg,
+);
+
+/* TEXT COLOR */
+$text-muted-custom: #435960;
+$label-form-text-color: $brandbook-secondary-color;
+
+$text-colors: (
+    "text-muted": $text-muted-custom
+);
+
+/* SOCIAL COLOR */
+$linkedin: #0177b5;
+$facebook: #4867aa;
+$google: #ea4335;
+$twitter: #32ccfe;
+$youtube: #be1b1e;
+$spid: #0066cc;
+$googleDrive: #3C83F7;
+
+$social-colors: (
+    "linkedin": $linkedin,
+    "facebook": $facebook,
+    "google": $google,
+    "twitter": $twitter,
+    "youtube": $youtube,
+    "spid": $spid,
+    "google-drive" : $googleDrive,
+);
+
+/* DEVICE AND BROWSER MEDIA QUERY */
+$device-media-queries: (
+  onlySafary: '-webkit-min-device-pixel-ratio:0',
+  onlyIe: '-ms-high-contrast:none',
+);
+

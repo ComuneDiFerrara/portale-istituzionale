@@ -1,0 +1,22 @@
+{
+    "vars": [ 
+        {
+            "var": "url",
+            "label": "Url Rss",
+            "description": "",
+            "initValue": "",
+            "type": "zaa-text"
+        },{
+            "var": "number_content_elements",
+            "label": "Number of rss to read",
+            "description": "",
+            "initValue": "",
+            "type": "zaa-number"
+        }
+    ],
+    "cfgs": [
+    ],
+    "defaults": {
+        
+    }
+}

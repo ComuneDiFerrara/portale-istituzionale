@@ -1,0 +1,71 @@
+//parte ricerca avanzata (per esempio in unità organizzative)
+.list-search-link{
+    &[aria-expanded="false"]::before{
+        content: '\002B';
+    }
+    &[aria-expanded="true"]::before{
+        content: '\2212';
+    }
+    color: $primary;
+    &:hover{
+        color: darken($primary, 10) ;
+    }
+}
+//ORGANIZATIONALUNIT-INDEX
+.agid-organizational-unit-search{
+    input{
+        @extend .my-4;   
+    }
+} 
+
+//ORGANIZATIONALUNIT-CREATE
+.agid-organizational-unit-create{
+    .workflow-transition-button-widget {
+        @extend .d-flex;   
+        >div.workflow-buttons-container{
+            @extend .d-flex;   
+            @extend .justify-content-end;   
+            order: 2;
+        }
+    }
+}
+
+
+.pagination{
+    @extend .col-12;
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+    li{
+        @extend .page-item;
+        span, a{
+            @extend .page-link;
+            @extend .text-decoration-none;
+        }
+    }
+    li.active{
+        a {
+            border: 1px solid $primary;
+            color: $primary;
+            pointer-events: none;
+        }
+    }
+}
+
+.card-argomenti-container{
+    .agid-evidence-topic-container{
+        .card.card-teaser{
+            height: 100%;
+            svg{
+                @extend .icon-white;
+                @extend .icon-padded;
+                @extend .rounded-circle;
+                @extend .mr-2;
+                @extend .icon-lg;
+                @extend .bg-primary;
+    
+            }
+        }
+        
+    }
+}

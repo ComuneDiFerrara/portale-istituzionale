@@ -1,0 +1,145 @@
+//breadcrumb
+.breadcrumb-container{
+    .breadcrumb{
+        background-color: transparent;
+        ul{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            list-style: none;
+            background-color: transparent;   
+            padding-left: 0;
+            li:not(:last-child) a{
+                @extend .text-muted;
+                font-weight: 600;
+                &::after{
+                    display: inline-block;
+                    font-weight: 600;
+                    padding: 0 0.5em;
+                    content: "/";
+                    color: $tertiary;
+                }
+            }
+        }
+        
+    }
+}
+
+//parte carousel hp
+.notizia-principale.it-bottom-overlapping-content{
+    .card-title{
+        a{
+            @extend .text-black;
+        }
+    }
+    .image-container-carousel{
+        >div{
+            @extend .h-100;
+            a{
+                @extend .h-100;
+                @extend .d-block;
+                img{
+                    @extend .h-100;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+//chip
+.chip.chip-primary{
+    background-color: transparent;
+    border-color: $primary;
+    color: $primary;
+    &:hover{
+    color: white;
+    background-color:$primary;
+    }
+    .el-title{
+        @extend .chip-label;
+        font-size: 0.778rem !important;
+        font-weight: 600 !important;
+        @extend .mb-0;
+
+    }
+}
+
+.one-line {
+    p{
+        @extend .mb-0;
+    }
+}
+
+.alert {
+    p{
+        @extend .mb-0;
+    }
+}
+
+.attachment-item{
+    a{
+        @extend .text-decoration-none;
+    }
+}
+.fullwidth-src {
+    label{
+        background-color: transparent;
+        position: absolute;
+        font-weight: 600;
+        line-height: calc(2.5rem - 1px);
+        transition: 0.2s ease-out;
+        top: 0;
+        font-size: 1rem;
+        cursor: text;
+        display: block;
+        max-width: 100%;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 0.5rem;
+        &.active{
+            @extend .d-none;
+            
+        }
+    }
+    
+}
+.container-categoria{
+    div:not(.check-child) .form-check:nth-child(1){
+        label{
+            @extend .font-weight-bold;
+        }
+    }
+}
+.argomenti-src{
+    a.badge{
+        height: 30px;
+    }
+}
+
+.active-filter{
+    @extend .bg-primary;
+    @extend .text-white;
+    svg{
+        @extend .icon-white;
+    }
+}
+
+.doc-format-chip{
+    min-width: 40px !important;
+}
+
+
+.errore-alert.hidden{
+    @extend .d-none;
+}
+
+
+
+
+

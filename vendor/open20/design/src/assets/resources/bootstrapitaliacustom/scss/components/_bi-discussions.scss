@@ -1,0 +1,15 @@
+.discussion-container {
+    .generic-info {
+        .community-title {
+            font-size: 0.8rem;
+        }
+    }
+}
+.discussion-container-card {
+    .other-info-item {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+    }
+}

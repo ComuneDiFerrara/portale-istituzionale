@@ -1,0 +1,208 @@
+.attachments-detail{
+    ul{
+        list-style: none;
+        @extend .pl-0;
+        @extend .row ;
+        @extend .w-100 ;
+        @extend .mw-100 ;
+        li{
+            @extend .card;
+            @extend .card-teaser;
+            @extend .shadow;
+            @extend .p-4;
+            @extend .card-body;
+            @extend .col-md-4 ;
+            margin: 0 16px;
+            a{
+                @extend .font-weight-bold;
+                @extend .overflow-hidden;
+                .news-allegato-name{
+                   
+                    @extend .overflow-hidden;
+                    
+                }
+            }
+        }
+        .news-allegato-kb{
+            @extend .d-none;
+        }
+    }
+}
+
+.index-right-container{
+    @extend .pt-4;
+    @extend .d-flex;
+    @extend .flex-column;
+    @media screen and (max-width:992px){
+        border-left: 1px solid #b1b1b3;
+    }
+    @media screen and (max-width:768px){
+        border-left: 0;
+        @extend .pt-0;
+    }
+    ul.uk-subnav{
+        list-style: none;
+        padding-left: 0;
+        li {
+            @extend .my-2;
+        }
+        a{
+            @extend .text-decoration-none;
+        }
+    }
+    ul.uk-subnav:not(.internal){
+        
+       
+        &:nth-child(1){
+            >li:not(.internal){
+                @extend .h4;
+                @extend .my-3;
+            }
+        }
+    }    
+    >.it-page-section{
+        @extend .mb-5;
+        p{
+            @extend .mb-0;
+        }
+    }
+}
+
+
+
+.scheda-verde-link {
+    background-color: #eaf2ec;
+    @extend .p-4;
+    @extend .m-0;
+    @extend .col-lg-6;
+    a{
+        @extend .text-decoration-none;
+    }
+    
+}
+
+.scheda-round{
+    @extend .rounded;
+}
+
+//DIMENSIONE LINK PANEL
+.uk-button-default{
+    .el-title{
+        font-size: 18px ;
+        @extend .mb-0;
+        font-weight: normal;
+    } 
+}
+
+.uk-button-default.uk-button-small{
+    .el-title{
+        @extend .small;
+        @extend .mb-0;
+    } 
+}
+
+.uk-button-large{
+    .el-title{
+        @extend .lead;
+        @extend .mb-0;
+    } 
+}
+
+
+//TASK 5151, TASK 5154
+ 
+
+
+.index-left-container{
+    aside{
+        a[aria-expanded="false"]{
+            svg{
+                -webkit-transform: scaleY(-1);
+                transform: scaleY(-1);
+                transition-duration: 0.3s;
+            }   
+        }
+        a[aria-expanded="true"]{
+            svg{
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+                transition-duration: 0.3s;
+            }   
+        }
+        #titolo-indice{
+            @media screen and (max-width:992px){
+                border-bottom: 4px solid #b1b1b3;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            &::after{
+                @media screen and (max-width:992px){
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -4px;
+                    width: 40px;
+                    height: 4px;
+                    background-color: #a66300;
+                }
+            }
+        }
+        position: sticky;
+        top:80px;
+        margin-bottom: 32px;
+        @media screen and (max-width:767px){
+            @extend .d-flex;
+            @extend .justify-content-center;
+            @extend .mb-2;
+        }
+        .navbar.it-navscroll-wrapper {
+            .menu-wrapper{
+                @media screen and (max-width:768px){
+                    @extend .pt-0;
+                    @extend .pb-0;
+                    width:100%;
+                    ul.link-list.collapse{
+                        li.nav-item{
+                            a{
+                                @extend .border-left-0;
+                                @extend .text-decoration-none;
+                                @extend .active;
+                                &:hover{
+                                    @extend .font-weight-bold;
+                                }
+                                span{
+                                    @extend .text-decoration-none;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+            }
+            #lista-paragrafi{
+                @media screen and (min-width:768px){
+                    border-bottom:0;
+                }
+                @media screen and (max-width:768px){
+                    border-bottom: 1px solid #b1b1b3;
+                }
+                
+            }
+        }
+    }
+    
+}
+
+
+//TASK 5158
+.headline-anchor{
+    a{
+        @extend .anchor-offset;
+    }
+    
+}
+
+
+
+
+

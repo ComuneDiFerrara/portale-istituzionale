@@ -1,0 +1,37 @@
+{
+    "vars": [ 
+        {
+            "var": "layout",
+            "label": "Layout",
+            "description": "Select visualization type.",
+            "initvalue": "1",
+            "options": [ {
+                    "value": "1",
+                    "label": "Graphic"
+                }, {
+                    "value": "2",
+                    "label": "Text"
+                }],
+            "type": "zaa-select"
+        },
+        {
+            "var": "is_highlights",
+            "label": "In evidenza",
+            "description": "",
+            "initvalue": "",
+            "type": "zaa-checkbox"
+        },
+        {
+            "var": "orderBy",
+            "label": "Condizione di ordinamento",
+            "description": "",
+            "initvalue": "",
+            "type": "zaa-text"
+        }
+    ],
+    "cfgs": [
+    ],
+    "defaults": {
+        "layout": "1"
+    }
+}

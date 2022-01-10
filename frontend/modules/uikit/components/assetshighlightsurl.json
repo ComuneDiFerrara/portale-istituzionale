@@ -1,0 +1,122 @@
+{
+    "vars": [ 
+            {
+                "var": "layout",
+                "label": "Layout",
+                "description": "Select visualization type.",
+                "initvalue": "1",
+                "options": [{
+                        "value": "1",
+                        "label": "Slider"
+                    }, {
+                        "value": "2",
+                        "label": "Graphic"
+                    }, {
+                        "value": "3",
+                        "label": "Text"
+                    }],
+                "type": "zaa-select"
+            },
+            {
+            "var": "items",
+            "label": "Items",
+            "description": "Material: https://materialdesignicons.com/<br>Bootstrap Italia: https://italia.github.io/bootstrap-italia/docs/utilities/icone/",
+            "type": "zaa-multiple-inputs",
+            "options": [
+                {
+                    "var": "icon_type",
+                    "label": "Icon Type",
+                    "description": "Select iconset.",
+                    "initvalue": "1",
+                    "options": [{
+                            "value": "1",
+                            "label": "Bootstrap Italia"
+                        }, {
+                            "value": "2",
+                            "label": "Material"
+                        }],
+                    "type": "zaa-select"
+                },{
+                    "var": "icon_name",
+                    "label": "Icon Name",
+                    "description": "",
+                    "initValue": "",
+                    "type": "zaa-text"
+                },{
+                    "var": "info_type",
+                    "label": "Information Type",
+                    "description": "",
+                    "initvalue": "",
+                    "type": "zaa-text"
+                },{
+                    "var": "info_date",
+                    "label": "Date",
+                    "description": "",
+                    "initvalue": "",
+                    "type": "zaa-date"
+                },
+                {
+                    "var": "image",
+                    "label": "Image",
+                    "description": "",
+                    "initValue": "",
+                    "options": {
+                        "no_filter": false
+                    },
+                    "type": "zaa-image-upload"
+                },{
+                    "var": "title",
+                    "label": "Title",
+                    "description": "",
+                    "initValue": "",
+                    "type": "zaa-text"
+                }, {
+                    "var": "content",
+                    "label": "Content",
+                    "description": "",
+                    "initValue": "",
+                    "type": "zaa-wysiwyg"
+                }
+                , {
+                    "var": "link",
+                    "label": "Link",
+                    "description": "Enter or pick a link, an image or a video file.",
+                    "initvalue": "",
+                    "placeholder": "http:\/\/",
+                    "type": "zaa-link"
+                }]
+        }
+    ],
+    "cfgs": [
+        {
+            "var": "autoplay",
+            "label": "Carousel autoplay",
+            "description": "Define if Carousel autoplay is active.",
+            "initvalue": "1",
+            "placeholder": "",
+            "type": "zaa-checkbox"
+        },
+        {
+            "var": "autoplayTimeout",
+            "label": "Carousel autoplayTimeout",
+            "description": "Define if Carousel autoplay timeout in milliseconds.",
+            "initvalue": "3000",
+            "placeholder": "",
+            "type": "zaa-number"
+        },
+        {
+            "var": "loop",
+            "label": "Carousel loop",
+            "description": "Define if Carousel loop is active.",
+            "initvalue": "1",
+            "placeholder": "",
+            "type": "zaa-checkbox"
+        }
+    ],
+    "defaults": {
+        "layout": "1",
+        "autoplay" : "1",
+        "loop" : "1",
+        "autoplayTimeout" : "3000"
+    }
+}

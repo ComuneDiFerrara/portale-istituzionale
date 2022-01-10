@@ -1,0 +1,78 @@
+.feedback-form{
+    form{
+        @extend .mt-4;
+        label{
+            @extend .position-relative;
+            @extend .mb-0;
+            @extend .px-0;
+        }
+        input:not(.btn){
+            @extend .bg-100;
+            @extend .border-bottom-0;
+            @extend .rounded;
+        }
+        input[id="submit"]{
+            @extend .text-white;
+            width: 25%;
+            @media (max-width:575px){
+                width: 100%;
+            }
+        }
+        [class*="col-xs"] {
+            @extend .col-md-10;
+            
+        }
+        textarea{
+            @extend .border;
+            @extend .border-light;
+            min-height: 50vh
+        }
+        .form-group{
+            @extend .mb-4;
+        }
+        .privacy_policy_item{
+            .form-group{
+                .row{
+                    .col-xs-12:nth-child(1){
+                        label{
+                            white-space: break-spaces;
+                            line-height: 30px;
+                        }                     
+                    }
+                   
+                    .col-xs-12:nth-child(2){
+                       
+                        .radio{
+                            input{
+                                @extend .mr-2;
+                            }
+                            label{
+                                font-weight: normal;
+                                &:after{
+                                    content: '';
+                                }
+                            }
+                        }
+                    }
+                  
+                }
+            }
+        }
+        .tooltip-error-field{
+            color: red;
+        }
+        .required{
+            label::after{
+                content: '*';
+            }
+        }
+    }
+}
+
+//tk page, 7180
+.feedback-button{
+    a{
+        @extend .btn;
+        @extend .btn-primary;
+    }
+}

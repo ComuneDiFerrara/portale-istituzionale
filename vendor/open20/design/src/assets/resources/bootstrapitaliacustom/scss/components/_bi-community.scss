@@ -1,0 +1,44 @@
+.community-container {
+    height: auto;
+    .community-image {
+        height: 60px;
+        width: 86px;
+        overflow: hidden;
+
+        img {
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+
+    .community-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .position-relative {
+        a {
+            bottom: -5px;
+            right: -5px;
+        }
+    }
+
+    //FIX PER IE
+    @media all and (-ms-high-contrast: none) {
+        .community-title-container {
+            width: 250px;
+            text-align: center;
+
+            .community-title {
+                position: relative;
+                display: inline-block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-height: 2.4em;
+                /* (Number of lines you want visible) * (line-height) */
+                line-height: 1.2em;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.dropdown-manage {
+  @extend .bg-white;
+  @extend .rounded-circle;
+  @extend .shadow-sm;
+  @extend .border;
+  @extend .border-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  a {
+    &#dropdownManageMenu {
+      .icon {
+        width: 18px !important;
+        height: 18px !important;
+        margin: 0 !important;
+        transform: translateY(-2px);
+      }
+      &:after {
+        content: inherit;
+      }
+    }
+  }
+  .dropdown-menu {
+    left: -6px !important;
+    top: -6px !important;
+    border-radius: 4px;
+    &::before {
+      top: 10px;
+      right: -6px;
+      left: auto;
+    }
+  }
+  &.dropleft {
+    .dropdown-toggle {
+      &::before {
+        content: inherit;
+      }
+    }
+  }
+}

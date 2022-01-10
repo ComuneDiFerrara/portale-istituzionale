@@ -1,0 +1,24 @@
+/**
+BREADCRUMB
+*/
+.breadcrumb(@background-breadcrumb: #ffffff) {
+  background: @background-breadcrumb;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.breadcrumb {
+  .breadcrumb();
+  & > li {
+    .separator {
+      padding: 0 5px;
+    }
+    
+		& + li {
+			&:before {
+				content: inherit;
+			}
+		}
+	}
+}

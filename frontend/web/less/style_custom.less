@@ -1,0 +1,107 @@
+@brand-primary-color:  #007DB3;
+@brand-secondary-color: #FFD400;
+@brand-third-color: #000;
+@main-background-color:@white-color;
+@text-primary-color:@brand-third-color;
+@btn-color-tools: @brand-primary-color;
+
+//fix duble / (separator + ::before bs3)
+.breadcrumb-container .breadcrumb .breadcrumb-item > .separator{
+    color:#ccc;
+}
+
+.fullsizeMainLayout,
+.fullsizeListLayout,
+.fullsizeFormLayout{
+    margin-top: 0 !important;
+}
+
+html,
+body {
+  font-size: 14px !important;
+  line-height: 1.5;
+  @media (min-width:576px) {
+    font-size: 14px !important;
+    line-height: 1.555;
+  }
+}
+
+.container{
+  @media screen and (min-width:768px){
+    width: 750px;
+  }
+  @media screen and (min-width:992px){
+    width: 970px;
+  }
+  @media screen and (min-width:1200px){
+    width: 1170px;
+  }
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+form .form-group.required label.control-label{
+  
+  &::after{
+    color: #a31f33 !important;
+    content: '* (obbligatorio)';
+    padding-left: 2px;
+    font-size: 0.8em;
+  }
+}
+
+.required-field{
+  color: #a31f33 !important; 
+  padding-left: 2px;
+  font-size: 0.8em;
+
+}
+
+.it-header-wrapper .open > .dropdown-toggle.btn-primary{
+  background-color: transparent;
+
+}
+
+.dropdown-menu{
+  .myprofile-menu, .divider, .privacy-menu, .cookie-menu{
+    display: none !important;
+  }
+  .exit-menu{
+    a{
+      color: @brand-primary-color !important;
+    }
+  }
+  ul >li:nth-child(1){
+    border-color: #b1b1b3 !important;
+  }
+  ul >li:not(:nth-child(1)){
+    padding: 0 !important;
+  }
+}
+
+.dropdown.menu-profile{
+  .btn.btn-primary{
+    background-color: transparent;
+    &:hover{
+      background-color: transparent;
+    }
+
+  }
+}
+
+
+.network-scope-wrapper {
+  display:none;
+}
+    
+
+
+
+
+@import 'fe-header-custom.less';
+@import 'fe-footer-custom.less';
+@import 'fe-workflow-buttons.less';
+@import 'fe-events-calendar.less';
+@import 'fe-view-porting-layout.less';
