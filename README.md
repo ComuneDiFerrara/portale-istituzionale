@@ -82,7 +82,7 @@ Queste configurazioni devono essere eseguite per ovviare ad alcune mancanze sull
         - si richiede l'installazione del db
 
 - **Installare il database vuoto**
-    - **Importare nel proprio database SQL contenuto in: li_empty_db.sql.gz**
+    - **Importare nel proprio database SQL contenuto in: empty_db.sql.gz**
 
 - **Configurazione Piattaforma**
     - vi common/config/main-local.php
@@ -97,17 +97,4 @@ Queste configurazioni devono essere eseguite per ovviare ad alcune mancanze sull
          ],
          ```
     - vi common/config/params-local.php si modificano le email di sistema
-
-## Aggiornamento Piattaforma
-- **cd /opt/rh/httpd24/root/var/www/html/basic-template**
-    - ci si sposta nella directory di installazione
-- **git pull**
-    - si richiede l'aggiornamento della piattaforma
-- **composer update**
-    - si richiede l'aggiornamento dei plug in
-- **php yii migrate**
-    - si richiede l'aggiornamento del db
-- **cd backend/runtime**
-    - ci si sposta nella directory della caches
-- **rm -R**
-    - si rimuovo tutte le caches
+    
