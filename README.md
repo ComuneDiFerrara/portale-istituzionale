@@ -11,8 +11,6 @@ La manualistica contenuta è puramente tecnica e per tanto **deve essere letta e
 
 ## Prerequisiti
 - Abilitare la connessione a **internet** per il download dei pacchetti necessari
-    - export http_proxy=http://reglomb.proxy:8080
-    - export https_proxy=http://reglomb.proxy:8080
 - Verificare che la versione di **PHP** Rispetti I requisiti (7.0.x * nei sistemi operativi RedHat potrebbe essere necessario collegare repository non ufficiali. *)
     - php -v
 - Verificare che la versione di **Mysql** Rispetti I requisiti (5.7)
@@ -68,14 +66,11 @@ Queste configurazioni devono essere eseguite per ovviare ad alcune mancanze sull
 
 ## Installazione Piattaforma
 - **Creare la directory platform nella directory www**
-    - cd /opt/rh/httpd24/root/var/www/html/platform
-    - cd /opt/rh/httpd24/root/var/www/html/platform
-
-- **Creare la directory basic-template nella directory www**
-    - cd /opt/rh/httpd24/root/var/www/html/basic-template
-    - chown -R apache:apache /opt/rh/httpd24/root/var/www/
-    - git clone https://github.com/regionelombardia-open20/basic-template.git, per scaricare la piattaforma base Open20/
-    - php init –-root=/opt/rh/httpd24/root/var/www/html/platform
+    - mkdir /var/www/html/platform
+    - cd /var/www/html/platform
+- **GIT clone del progetto in /var/www/html/platform**
+- **Creare la directory del progetto nella directory www**
+    - php init –-root=/var/www/html/platform
     - **composer update**
         - si richiede l'installazione dei plug in
     - **php yii migrate**
