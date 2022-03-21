@@ -134,7 +134,7 @@ it:
     spid: true
   riuso:
     codiceIPA: c_d548
-landingURL: 'https://github.com/git-comune-fe/ComuneFerrara'
+landingURL: 'https://github.com/ComuneDiFerrara/portale-istituzionale'
 legal:
   license: GPL-3.0-or-later
   mainCopyrightOwner: Comune di Ferrara
@@ -153,6 +153,6 @@ platforms:
   - web
 releaseDate: '2021-07-14'
 softwareType: standalone/web
-url: 'https://github.com/git-comune-fe/ComuneFerrara'
+url: 'https://github.com/ComuneDiFerrara/portale-istituzionale'
 usedBy:
   - Comune di Ferrara (FE)
