@@ -2,7 +2,7 @@
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/italia/publiccode.yml
 
-publiccodeYmlVersion: '0.2'
+publiccodeYmlVersion: '0.4'
 applicationSuite: OPEN 2.0
 categories:
   - content-management
@@ -42,11 +42,10 @@ description:
         (SEO)
       - Versioning delle pagine
       - Supporto multilingue
-      - Architettura dell'Informazione dei siti web dei Comuni Italiani v1.0
-    genericName: Portale istituzionale collaborativo
+      - Architettura dell'Informazione dei siti web dei Comuni Italiani v1.0   
     longDescription: |
       ## **La piattaforma del comune**
-
+      
 
       Nel luglio 2021, il Comune di Ferrara ha pubblicato il nuovo portale
       istituzionale realizzato secondo le [linee guida di Designers Italia -
