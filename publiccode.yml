@@ -1,9 +1,13 @@
-# This repository adheres to the publiccode.yml standard by including this 
-# metadata file that makes public software easily discoverable.
-# More info at https://github.com/italia/publiccode.yml
-
-publiccodeYmlVersion: '0.4'
+publiccodeYmlVersion: "0"
 applicationSuite: OPEN 2.0
+name: Comune di Ferrara
+url: "https://github.com/ComuneDiFerrara/portale-istituzionale"
+landingURL: "https://github.com/ComuneDiFerrara/portale-istituzionale"
+releaseDate: "2021-07-14"
+softwareType: standalone/web
+platforms:
+  - web
+
 categories:
   - content-management
   - communications
@@ -11,41 +15,19 @@ categories:
   - event-management
   - blog
   - collaboration
-  - communications
-  - content-management
   - document-management
   - email-marketing
   - online-community
   - survey
+
 description:
-  it:
-    apiDocumentation: 'http://docs.open2.0.appdemoweb.org'
-    documentation: 'https://www.open2.0.regione.lombardia.it'
-    features:
-      - Controllo degli accessi basato su ruoli
-      - Builder delle pagine con moduli drag n drop
-      - Persone e unità organizzative
-      - Notizie ed eventi
-      - Documenti
-      - Organigramma e rubrica interna
-      - Consultazioni
-      - 'Community aperte, chiuse e riservate'
-      - Discussioni
-      - Messaggi privati
-      - Newsletter
-      - Ticket system
-      - Sistema di notifiche
-      - File sharing
-      - Responsive Design basato sul kit Bootstrap Italia
-      - |-
-        Gestione dei parametri utili all'ottimizzazione per i motori di ricerca
-        (SEO)
-      - Versioning delle pagine
-      - Supporto multilingue
-      - Architettura dell'Informazione dei siti web dei Comuni Italiani v1.0   
+  it-IT:
+    documentation: "https://www.open2.0.regione.lombardia.it"
+    shortDescription: >-
+      Un modello collaborativo per i siti web dei Comuni che mette al centro le
+      necessità del cittadino e ne valorizza la partecipazione attiva
     longDescription: |
       ## **La piattaforma del comune**
-      
 
       Nel luglio 2021, il Comune di Ferrara ha pubblicato il nuovo portale
       istituzionale realizzato secondo le [linee guida di Designers Italia -
@@ -54,104 +36,66 @@ description:
       l’[architettura della
       informazione](https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=1225072581).
 
-
       ### **Gli obiettivi**
-
-
-      L’Amministrazione ha seguito le seguenti direttive:
-
-
-      - **utilizzo di uno strumento Open Source**, di livello enterprise in
-      grado di evolvere sulla base delle esigenze della macchina amministrativa,
-      in una logica di riuso e in accordo con le buone pratiche indicate da AgID
-      (Agenzia per l’Italia Digitale)
-
-      - **adozione di una soluzione IT a supporto dell’evoluzione
-      “collaborativa”** in funzione del coinvolgimento attivo del cittadino,
-      inteso non solo come utente dei servizi ma anche come protagonista delle
-      scelte strategiche
-
+      - utilizzo di uno strumento Open Source…
+      - adozione di una soluzione IT a supporto dell’evoluzione “collaborativa”…
 
       ### **L’architettura e la tecnologia**
+      Basata sul framework [Open 2.0](https://developers.italia.it/it/software/r_lombar-regionelombardia-open20.html).
+      Funzionalità: community, discussioni, messaggistica, consultazioni, ecc.
 
+    features:
+      - Controllo degli accessi basato su ruoli
+      - Builder pagine drag & drop
+      - Persone e unità organizzative
+      - Notizie ed eventi
+      - Documenti
+      - Organigramma e rubrica interna
+      - Consultazioni
+      - Community (aperte/chiuse/riservate)
+      - Discussioni
+      - Messaggi privati
+      - Newsletter
+      - Ticket system
+      - Sistema di notifiche
+      - File sharing
+      - Responsive Design (Bootstrap Italia)
+      - SEO (gestione parametri)
+      - Versioning pagine
+      - Supporto multilingue
+      - Architettura dell'Informazione dei siti web dei Comuni Italiani v1.0
 
-      La nuova piattaforma è un sistema applicativo modulare, organizzato in
-      componenti funzionali in grado di interagire tra loro. Si basa sul
-      Framework per aree collaborative [Open
-      2.0](https://developers.italia.it/it/software/r_lombar-regionelombardia-open20.html);
-      un ambiente per la creazione di applicazioni rivolte a promuovere la
-      partecipazione e la collaborazione nelle community e nei progetti
-      complessi.
-
-
-      L’accesso al sistema è controllato attraverso la definizione di profili
-      utente che limitano la visibilità e l’utilizzo delle funzioni, nonché
-      l’accesso alle informazioni.
-
-
-      Sono presenti efficaci strumenti di ascolto e partecipazione del
-      cittadino. Pertanto a disposizione della PA troviamo:
-
-
-      - **community**: per la creazione di gruppi di lavoro e/o di progetto o di
-      condivisione di interessi comuni;
-
-      - **discussioni**: strumenti per informare, avviare discussioni,
-      ingaggiando i partecipanti sulla base di interessi e competenze;
-
-      - **messaggistica**: per permettere la comunicazione uno a uno in forma
-      privata
-
-      - **consultazioni**: per coinvolgere i cittadini nelle scelte
-      dell’Amministrazione e permettere loro di esprimere valutazioni, pareri e
-      opinioni o raccogliere il loro interesse su specifiche questioni.
-    shortDescription: |-
-      Un modello collaborativo per i siti web dei Comuni che mette al centro le
-      necessità del cittadino e ne valorizza la partecipazione attiva
-developmentStatus: stable
 intendedAudience:
   countries:
-    - it
+    - IT
   scope:
     - local-authorities
     - culture
     - tourism
     - government
+
 isBasedOn:
-  - 'https://github.com/RegioneLombardia/Open20'
-it:
-  conforme:
-    gdpr: true
-    lineeGuidaDesign: true
-    misureMinimeSicurezza: true
-    modelloInteroperabilita: true
-  countryExtensionVersion: '0.2'
-  piattaforme:
-    anpr: false
-    cie: true
-    pagopa: false
-    spid: true
-  riuso:
-    codiceIPA: c_d548
-landingURL: 'https://github.com/ComuneDiFerrara/portale-istituzionale'
+  - "https://github.com/RegioneLombardia/Open20"
+
+organisation:
+  name: Comune di Ferrara
+  uri: "urn:x-italian-pa:c_d548"
+
 legal:
   license: GPL-3.0-or-later
   mainCopyrightOwner: Comune di Ferrara
-  repoOwner: Comune di Ferrara (FE)
+
 localisation:
-  availableLanguages:
-    - it
   localisationReady: true
+  availableLanguages:
+    - it-IT
+
 maintenance:
-  contacts:
-    - email: m.poletti@comune.fe.it
-      name: Massimo Poletti
   type: internal
-name: Comune di Ferrara
-platforms:
-  - web
-releaseDate: '2021-07-14'
-softwareType: standalone/web
-url: 'https://github.com/ComuneDiFerrara/portale-istituzionale'
+  contacts:
+    - name: Massimo Poletti
+      email: m.poletti@comune.fe.it
+
 usedBy:
   - Comune di Ferrara (FE)
+
