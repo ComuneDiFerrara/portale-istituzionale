@@ -5,6 +5,7 @@ url: "https://github.com/ComuneDiFerrara/portale-istituzionale"
 landingURL: "https://github.com/ComuneDiFerrara/portale-istituzionale"
 releaseDate: "2021-07-14"
 softwareType: standalone/web
+developmentStatus: stable
 platforms:
   - web
 
@@ -27,43 +28,39 @@ description:
       Un modello collaborativo per i siti web dei Comuni che mette al centro le
       necessità del cittadino e ne valorizza la partecipazione attiva
     longDescription: |
-      ## **La piattaforma del comune**
+      ## **La piattaforma del Comune**
 
       Nel luglio 2021, il Comune di Ferrara ha pubblicato il nuovo portale
-      istituzionale realizzato secondo le [linee guida di Designers Italia -
-      Modello per i siti comunali](https://designers.italia.it/modello/comuni/),
-      sia per quanto riguarda le indicazioni di templating sia per
-      l’[architettura della
-      informazione](https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=1225072581).
+      istituzionale realizzato secondo le linee guida di Designers Italia per i
+      siti comunali.
 
-      ### **Gli obiettivi**
-      - utilizzo di uno strumento Open Source…
-      - adozione di una soluzione IT a supporto dell’evoluzione “collaborativa”…
+      L’Amministrazione ha adottato una soluzione open source, modulare e
+      riusabile, basata sul framework [Open 2.0](https://developers.italia.it/it/software/r_lombar-regionelombardia-open20.html).
 
-      ### **L’architettura e la tecnologia**
-      Basata sul framework [Open 2.0](https://developers.italia.it/it/software/r_lombar-regionelombardia-open20.html).
-      Funzionalità: community, discussioni, messaggistica, consultazioni, ecc.
+      La piattaforma abilita la partecipazione del cittadino attraverso
+      community, discussioni, consultazioni e messaggistica, integrando
+      strumenti di collaborazione e gestione dei contenuti.
 
     features:
-      - Controllo degli accessi basato su ruoli
-      - Builder pagine drag & drop
+      - Controllo accessi basato su ruoli
+      - Page builder drag & drop
       - Persone e unità organizzative
       - Notizie ed eventi
       - Documenti
       - Organigramma e rubrica interna
       - Consultazioni
-      - Community (aperte/chiuse/riservate)
+      - Community (aperte, chiuse, riservate)
       - Discussioni
       - Messaggi privati
       - Newsletter
       - Ticket system
       - Sistema di notifiche
       - File sharing
-      - Responsive Design (Bootstrap Italia)
-      - SEO (gestione parametri)
+      - Responsive design (Bootstrap Italia)
+      - Gestione SEO
       - Versioning pagine
       - Supporto multilingue
-      - Architettura dell'Informazione dei siti web dei Comuni Italiani v1.0
+      - Architettura dell’Informazione dei siti web dei Comuni Italiani v1.0
 
 intendedAudience:
   countries:
@@ -77,13 +74,15 @@ intendedAudience:
 isBasedOn:
   - "https://github.com/RegioneLombardia/Open20"
 
-organisation:
-  name: Comune di Ferrara
-  uri: "urn:x-italian-pa:c_d548"
-
 legal:
   license: GPL-3.0-or-later
   mainCopyrightOwner: Comune di Ferrara
+  owner:
+    name: Comune di Ferrara
+    email: urp@comune.fe.it
+    url: https://www.comune.fe.it
+    type: publicAdministration
+    uri: "urn:x-italian-pa:c_d548"
 
 localisation:
   localisationReady: true
@@ -98,4 +97,3 @@ maintenance:
 
 usedBy:
   - Comune di Ferrara (FE)
-
